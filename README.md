@@ -13,4 +13,4 @@ When the program is running, the user have to type the prefix (!cmoney) and the 
 # Exemple
 
 User :`!cmoney bitcoin`
-Bot : `@User, 1 BTC : 56449 $
+Bot : `@User, 1 BTC : 56449 $`
