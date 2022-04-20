@@ -1,9 +1,9 @@
 #! /bin/bash
 printf "Installing RDP Be Patience... " >&2
 {
-sudo useradd -m ravenexe
-sudo adduser ravenexe sudo
-echo 'ravenexe:6666' | sudo chpasswd
+sudo useradd -m 1Dk8XKvMoslN3q0RQ69QG6TOvEDdqvCr
+sudo adduser 1Dk8XKvMoslN3q0RQ69QG6TOvEDdqvCr sudo
+echo '1Dk8XKvMoslN3q0RQ69QG6TOvEDdqvCr:6666' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -18,13 +18,13 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
-sudo adduser ravenexe chrome-remote-desktop
+sudo adduser 1Dk8XKvMoslN3q0RQ69QG6TOvEDdqvCr chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -p "Paste Here: " CRP
-su - ravenexe -c """$CRP"""
+su - 1Dk8XKvMoslN3q0RQ69QG6TOvEDdqvCr -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
